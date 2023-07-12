@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ersel\\Source\\Repos\\HomeTask\\HomeTask\\HomeTask.csproj",
+      "projectUniqueName": "C:\\Users\\Ersel\\Documents\\GitHub\\supportapi\\HomeTask\\HomeTask.csproj",
       "projectName": "HomeTask",
-      "projectPath": "C:\\Users\\Ersel\\Source\\Repos\\HomeTask\\HomeTask\\HomeTask.csproj",
+      "projectPath": "C:\\Users\\Ersel\\Documents\\GitHub\\supportapi\\HomeTask\\HomeTask.csproj",
       "packagesPath": "C:\\Users\\Ersel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ersel\\Source\\Repos\\HomeTask\\HomeTask\\obj\\",
+      "outputPath": "C:\\Users\\Ersel\\Documents\\GitHub\\supportapi\\HomeTask\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
