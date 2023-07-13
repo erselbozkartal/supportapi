@@ -28,12 +28,12 @@ namespace HomeTask.Service
 
         private void MonitorQueue(object state)
         {
-            //var inactiveSessions = supportQueue.GetInactiveSessions();
+            var inactiveSessions = supportQueue.GetInactiveSessions();
 
-            //foreach (var session in inactiveSessions)
-            //{
-            //    Console.WriteLine($"Session {session.SessionId} is inactive.");
-            //}
+            foreach (var session in inactiveSessions)
+            {
+                Console.WriteLine($"Session {session.SessionId} is inactive.");
+            }
         }
     }
 }

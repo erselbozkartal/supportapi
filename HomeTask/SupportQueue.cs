@@ -26,6 +26,11 @@ namespace HomeTask
             maxConcurrentChats = 10;
         }
 
+        public List<ChatSession> GetInactiveSessions()
+        {
+            return queue.Where(x => !x.IsActive).ToList();
+        }
+
         public void EnqueueChatSession(ChatSession chatSession)
         {
             if (currentQueueLength >= maxQueueLength)
