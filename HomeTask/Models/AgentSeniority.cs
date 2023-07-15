@@ -1,6 +1,6 @@
-﻿namespace HomeTask
+﻿namespace HomeTask.Models
 {
-    public enum Seniority
+    public enum AgentSeniority
     {
         Junior,
         MidLevel,

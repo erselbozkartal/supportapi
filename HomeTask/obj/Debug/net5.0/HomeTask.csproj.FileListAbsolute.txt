@@ -54,3 +54,4 @@ C:\Users\Ersel\Documents\GitHub\supportapi\HomeTask\obj\Debug\net5.0\HomeTask.dl
 C:\Users\Ersel\Documents\GitHub\supportapi\HomeTask\obj\Debug\net5.0\ref\HomeTask.dll
 C:\Users\Ersel\Documents\GitHub\supportapi\HomeTask\obj\Debug\net5.0\HomeTask.pdb
 C:\Users\Ersel\Documents\GitHub\supportapi\HomeTask\obj\Debug\net5.0\HomeTask.genruntimeconfig.cache
+C:\Users\Ersel\Documents\GitHub\supportapi\HomeTask\obj\Debug\net5.0\HomeTask.csproj.AssemblyReference.cache

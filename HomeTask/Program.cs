@@ -1,10 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace HomeTask
@@ -13,6 +9,12 @@ namespace HomeTask
     {
         public static void Main(string[] args)
         {
+            Task.Run(() =>
+            {
+                var thread = new Thread(new HomeTask.Service.Monitor().ChatQueue);
+                thread.Start();
+                thread.Join();
+            });
             CreateHostBuilder(args).Build().Run();
         }
 
