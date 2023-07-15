@@ -5,7 +5,14 @@ using System.Linq;
 
 namespace HomeTask.Service
 {
-    public class Chat
+    public interface IChat
+    {
+        bool IsAgentActive(Agent agent);
+        bool IsOfficeHours();
+        int GetMaxQueueSize();
+    }
+
+    public class Chat : IChat
     {
         public bool IsAgentActive(Agent agent)
         {

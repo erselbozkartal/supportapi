@@ -9,13 +9,18 @@ namespace HomeTask.Controllers
     [ApiController]
     public class SupportRequestsController : ControllerBase
     {
+        private readonly IChat chatService;
+
+        public SupportRequestsController(IChat _chatService)
+        {
+            chatService = _chatService;
+        }
+
         [HttpPost]
         public IActionResult CreateSupportRequest()
         {
-            var chat = new Chat();
-            if ((Objects._chatQueue.Count >= Objects.MaxQueueSize && !chat.IsOfficeHours()) || (Objects._chatQueue.Count >= chat.GetMaxQueueSize() && chat.IsOfficeHours()))
+            if ((Objects._chatQueue.Count >= Objects.MaxQueueSize && !chatService.IsOfficeHours()) || (Objects._chatQueue.Count >= chatService.GetMaxQueueSize() && chatService.IsOfficeHours()))
                 return BadRequest("Chat request cannot be accepted at the moment. Please try again later.");
-            
             var chatSession = new ChatSession
             {
                 RequestId = Guid.NewGuid().ToString(),
