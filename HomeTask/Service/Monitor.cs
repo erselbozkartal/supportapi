@@ -22,7 +22,6 @@ namespace HomeTask.Service
                     }
                 }
 
-                // Check if any active chat session needs to be marked as inactive
                 foreach (var activeSession in Objects._activeChatSessions.Values.ToList())
                 {
                     if (activeSession.PollCount >= 3)
@@ -32,7 +31,6 @@ namespace HomeTask.Service
                     }
                 }
 
-                // Wait for 1 second before checking the queue and active sessions again
                 Thread.Sleep(1000);
             }
         }

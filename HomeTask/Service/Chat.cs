@@ -16,15 +16,11 @@ namespace HomeTask.Service
     {
         public bool IsAgentActive(Agent agent)
         {
-            // Implement your logic to check if the agent is currently active
-            // This can be based on shift timings or any other criteria you define
             return true;
         }
 
         public bool IsOfficeHours()
         {
-            // Implement your logic to check if it's office hours
-            // Return true if it's within office hours, otherwise false
             return true;
         }
 
